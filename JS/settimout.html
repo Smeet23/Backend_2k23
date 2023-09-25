@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="para">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit deserunt modi voluptatibus delectus aliquid
+            suscipit nesciunt dolore reiciendis expedita veniam.
+
+        </p>
+
+    </div>
+    <div>
+        The time now is <span id="time"></span>
+    </div>
+    <script>
+        function greet() {
+            let para = document.getElementById('para');
+            if (para.style.display != 'none') {
+
+                para.style.display = 'none';
+            }
+            else{
+                para.style.display = 'block';
+
+            }
+        }
+        // let timeout = setTimeout(greet,2000);
+        // clearTimeout(timeout); // This will cancel the timeout action
+
+        // int_ID=setInterval(greet, 2000);
+        // clearInterval(int_ID)
+
+        function set_time()
+        {
+            time = new Date();
+            document.getElementById('time').innerHTML=time;
+
+
+        }
+        setInterval(set_time,1000)
+
+    </script>
+</body>
+
+</html>

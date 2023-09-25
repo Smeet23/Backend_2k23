@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+        </ul>
+    </div>
+    <script>
+        var v = "This is string-1"
+        // Below will overwrite the variable v without giving any error
+        var v = "This is string-2"
+        //This is a problem because when we write big codes there will be ambiguity   problem in our code therfore we will use let keyword
+
+        let v1 = "This is a string"
+        {
+            //We can redeclare it here but since it is a block element the changed value will only applied here.
+            let v1 = "This is a another string"
+            console.log(v1)
+            
+        }
+        console.log(v1)
+        // let v1 = "This is another string" --> This will give you a error
+
+        //This is constant throughout our code
+        const st = "This is constant"
+        // Below will give error
+        // st = "This is not constant"
+
+        let marks = 36;
+
+        if(marks <=30)
+        {
+            console.log("Unsatisfactory")
+        }
+        else if (30<marks<40)
+        {
+            console.log("Satisfactory")
+        } 
+        else{
+            console.log("Excellent")
+        }       
+    </script>
+</body>
+</html>
