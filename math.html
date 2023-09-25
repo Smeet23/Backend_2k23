@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="math">
+
+    </div>
+    
+    <script>
+        let m = Math;
+        console.log(m);
+        console.log(m.E);
+        console.log(m.PI);
+        console.log(m.LOG2E);
+        console.log(m.SQRT2);
+        
+        
+        let a = 45.64656;
+        let b = 43.45345;
+        console.log(a,b)
+        //round of
+        console.log(m.round(a),m.round(b))
+        //power 
+        console.log(m.pow(2,3))
+        //sqrt
+        console.log(m.sqrt(4))
+        //ceil and floor
+        console.log(m.ceil(4.34))
+        console.log(m.floor(4.34))
+
+        //Absolute
+        console.log(m.abs(-5))
+        console.log(m.abs(5))
+
+        //trigonometic
+        console.log(m.sin(m.PI/2))
+        console.log(m.cos(m.PI/2))
+        console.log(m.tan(m.PI/2))
+
+        //Min amd Max
+        console.log(m.min(2,3,4,5))
+        console.log(m.max(2,3,4,5))
+
+        //Generating a random number
+
+        console.log(m.random())
+        let a_10_50 = a+(b-a)*m.random();
+        console.log(a_10_50)
+
+
+
+
+
+    </script>
+</body>
+</html>

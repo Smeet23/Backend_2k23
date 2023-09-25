@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let jsoni = {
+            name: "Smeet",
+            id: "202101237",
+            college: "Daiict",
+        }
+        console.log(jsoni);
+        let str_jsoni = JSON.stringify(jsoni);
+        console.log(str_jsoni);
+        let rep_jsoni = str_jsoni.replace("Smeet","Priyesh")
+        console.log(rep_jsoni);
+        let obj_jsoni = JSON.parse(str_jsoni);
+        console.log(obj_jsoni);
+    </script>
+</body>
+</html>

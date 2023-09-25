@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            
+            display: flex;
+            justify-content: end;
+            align-items:center;
+            flex-direction: column;
+        }
+        .cont{
+            /* display: flex; */
+            height: 200px;
+            width: 200px;
+            background-color: crimson;
+            color: white;
+            border: 2px solid black;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <div class="cont">
+            Current date is <span id="date"></span>
+        </div>
+    </div>
+    <script>
+        let dt = new Date("2024-02-23");
+        console.log(dt)
+        function set_time()
+        {
+            time = new Date();
+            document.getElementById('date').innerHTML=time;
+
+
+        }
+        setInterval(set_time,1000)
+
+    </script>
+</body>
+</html>

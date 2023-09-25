@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>
+            This is arrays tutorial
+        </p>
+    </div>
+    <script>
+        let name = "Smeet"
+        let id = 237
+        let batch  = 2021
+        let course = "Software Engineering"
+        //Below is object
+        let info = 
+        {
+            name: "Smeet",
+            id:  237,
+            batch: 2021,
+            course: "Software Engineering" ,
+            "City name":"Gandhinagar",
+            
+
+        }
+        console.log(info)
+        //Array
+        // let FirAr = [1,"Smeet",true,undefined]
+        // console.log(FirAr)
+        let FirAr = new Array(1,300,30,"Smeet",true,undefined,2)
+        console.log(FirAr)
+        
+        console.log(FirAr.length)//Return the length of object
+        FirAr = FirAr.sort() // sorting of array
+        console.log(FirAr)
+        FirAr.push("This will push in array")
+        let vr = info.batch;
+        //or
+        let vr1 = info['batch'];
+        //But for city name
+
+        let vr3 = info['City name']
+        // let vr4 = info.city name  is wrong
+
+
+        console.log(vr)
+        console.log(vr1)
+        console.log(vr3)
+    </script>
+
+</body>
+</html>
